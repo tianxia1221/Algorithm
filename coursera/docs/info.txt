@@ -1,0 +1,22 @@
+https://www.coursera.org/learn/algorithms-part1/resources/R2mre
+
+Findbugs
+Findbugs scans Java bytecode and looks for common bug patterns. The autograder uses Findbugs 3.0.1 with the configuration file findbugs-coursera.xml. Here is a list of bug descriptions. Occasionally, Findbugs reports false positives, so the autograder does not count the results toward your score.
+
+
+
+In the example above, Findbugs reports one issue: two strings are being compared using the == operator instead of the equals() method. Usually, this is not what you want, so Findbugs flags it as suspicious.
+
+PMD
+PMD scans Java source code and looks for common bug patterns. The autograder uses PMD 5.7.0 with the configuration file pmd.xml. Here is a list of bug descriptions. Occasionally, PMD reports false positives, so the autograder does not count the results toward your score.
+
+
+
+In the example above, PMD reports one issue: the formal parameter alpha is never used by its method.
+
+Checkstyle
+Checkstyle scans Java source code and verifies that the code adheres to a set of style guidelines. The autograder uses Checkstyle 8.5 with the configuration file checkstyle-coursera.xml. Here is a list of available checks. As style is inherently subjective, you may disagree with the style checker. In such cases, you are free to ignore it; the autograder does not count style toward your score.
+
+
+
+In the example above, the style checker reports two warnings. The first is that the instance variable grid_connections does not use camel case. The second is that the file contains tab characters. To fix the first issue, rename the variable to gridConnections. To fix the second issue, configure your IDE or text editor to replace tabs with spaces.
