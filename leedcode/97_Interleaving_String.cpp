@@ -3,7 +3,7 @@ class Solution {
     
 public:
     bool isInterleave(string s1, string s2, string s3) {
-
+        //v[i][j] as true if i characters from s1 and j characters from s2 can interleave into s3[0 ... i+j-1].
         if(s1.size() + s2.size() != s3.size()) return false;
         if(s1.size()==0 && s2.size()==0 && s3.size() == 0) return true;
         
