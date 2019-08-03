@@ -1,0 +1,81 @@
+
+class Solution
+{
+public:
+    vector<vector<int>> palindromePairs(vector<string> &words)
+    {
+
+        vector<vector<int>> ret;
+
+        unordered_map<string, int> m;
+        for (int i = 0; i < words.size(); i++)
+        {
+            m[words[i]] = i;
+        }
+
+        string cur;
+        string left;
+        for (int i = 0; i < words.size(); i++)
+        {
+
+            //whole word
+            cur = string(words[i].rbegin(), words[i].rend());
+            // cout << cur << endl;
+            auto it = m.find(cur);
+            if (it != m.end() && i != it->second)
+            {
+                ;
+                ret.push_back({i, it->second});
+            }
+
+            //left is P, {it->second, i}
+            for (int j = 1; j <= words[i].size(); j++)
+            {
+                cur = words[i].substr(0, j);
+                if (isP(cur))
+                {
+                    left = words[i].substr(j);
+                    reverse(left.begin(), left.end());
+                    it = m.find(left);
+                    if (it != m.end())
+                    {
+                        if (i != it->second)
+                        {
+                            ret.push_back({it->second, i});
+                        }
+                    }
+                }
+            }
+
+            for (int j = words[i].size(); j >= 1; j--)
+            {
+                cur = words[i].substr(j - 1);
+                if (isP(cur))
+                {
+                    left = words[i].substr(0, j - 1);
+                    reverse(left.begin(), left.end());
+                    it = m.find(left);
+                    if (it != m.end() && i != it->second)
+                    {
+                        ret.push_back({i, it->second});
+                    }
+                }
+            }
+        }
+
+        return ret;
+    }
+
+    bool isP(string &s)
+    {
+        int begin = 0, end = s.size() - 1;
+        while (begin < end)
+        {
+            if (s[begin] != s[end])
+                return false;
+            begin++;
+            end--;
+        }
+        return true;
+    }
+};
