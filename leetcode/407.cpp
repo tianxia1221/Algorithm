@@ -1,0 +1,68 @@
+class cmp {
+public:
+	bool operator()(const tuple<int, int, int> &a, const tuple<int, int, int> &b) {
+		return get<2>(a) > get<2>(b);
+	}
+};
+
+class Solution {
+public:
+	int trapRainWater(vector<vector<int>>& heightMap) {
+
+		if (heightMap.size() == 0) return 0;
+
+		static const int dx[4] = { 0, 0, -1, 1 };
+		static const int dy[4] = { -1, 1, 0, 0 };
+		int ret = 0;
+		int row = heightMap.size();
+		int col = heightMap[0].size();
+		vector<vector<bool>> mark(row, vector<bool>(col, false));
+		priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, cmp> q;
+
+		//init priority queue
+		for (int i = 0; i < row; i++) {
+			q.push(tuple<int, int, int>(i, 0, heightMap[i][0]));
+			mark[i][0] = true;
+
+			q.push(tuple<int, int, int>(i, col - 1, heightMap[i][col - 1]));
+			mark[i][col - 1] = true;
+		}
+
+		for (int i = 1; i < col - 1; i++) {
+			q.push(tuple(0, i, heightMap[0][i]));
+			mark[0][i] = true;
+
+			q.push(tuple(row - 1, i, heightMap[row - 1][i]));
+			mark[row - 1][i] = true;
+		}
+
+		tuple<int, int, int> cur;
+		int newx, newy, x, y, z;
+		while (!q.empty()) {
+			cur = q.top();
+			q.pop();
+			x = get<0>(cur);
+			y = get<1>(cur);
+			z = get<2>(cur);
+			// cout << "x:" << x << " y:" << y << " z:" << z <<endl;
+
+			for (int i = 0; i < 4; i++) {
+				newx = x + dx[i];
+				newy = y + dy[i];
+				if (newx < 0 || newy < 0 || newx >= row || newy >= col || mark[newx][newy]) continue;
+				if (heightMap[newx][newy] < z) {
+					ret += (z - heightMap[newx][newy]);
+					heightMap[newx][newy] = z;
+				}
+
+				mark[newx][newy] = true;
+				q.push(tuple(newx, newy, heightMap[newx][newy]));
+				//    cout << "newxx:" << newx << " newyy:" << newy << " z:" << z << "heightMap[newx][newy]"<< heightMap[newx][newy]<< endl;
+			}
+
+		}
+
+		return ret;
+
+	}
+};
