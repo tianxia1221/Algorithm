@@ -1,50 +1,30 @@
-class Solution {
 
-	class BIT {
-	private:
-		vector<int> tree;
-
-	public:
-		BIT(int n) {
-			tree.resize(n);
-			for (int i = 0; i < n; i++) tree[i] = 0;
-		}
-
-		void update_node(int i, int val) {
-			int count = tree.size();
-			while (i < count) {
-				tree[i] += val;
-				i += i & (-i);
-			}
-		}
-
-		int sum(int i) {
-			int ret = 0;
-			while (i > 0) {
-				ret += tree[i];
-				i -= i & (-i);
-			}
-			return ret;
-		}
-	};
-
-public:
-	vector<int> countSmaller(vector<int>& nums) {
-		vector<int> ret(nums.size());
-		set<int> noDupNums(nums.begin(), nums.end());
-		map<int, int> hmap;
-		int i = 0;
-		for (auto val : noDupNums) hmap[val] = ++i;
-
-		BIT bitOpt(hmap.size() + 1);
-
-		int index;
-		for (int i = nums.size() - 1; i >= 0; i--) {
-			index = hmap[nums[i]];
-			bitOpt.update_node(index, 1);
-			ret[i] = bitOpt.sum(index - 1);
-		}
-
-		return ret;
+vector<int> cellCompete(int* states, int days)
+{
+	vector<int> t(10, 0);
+	vector<int> t1(10, 0);
+	vector<int> *pt = &t;
+	vector<int> *pt1 = &t1;
+	vector<int> *tmp;
+	vector<int> ret(8);
+	for (int i = 0; i < 8; i++) {
+		t[i + 1] = states[i];
+		t1[i + 1] = states[i];
 	}
-};
+
+	for (int j = 0; j < days; j++) {
+		for (int i = 1; i < 9; i++) {
+			(*pt1)[i] = (*pt)[i - 1] ^ (*pt)[i + 1];
+		}
+		tmp = pt;
+		pt = pt1;
+		pt1 = tmp;
+	}
+
+	for (int i = 0; i < 8; i++) {
+		ret[i] = (*pt)[i + 1];
+	}
+
+	return ret;
+
+}
