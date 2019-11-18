@@ -24,7 +24,6 @@ class MyComparator implements Comparator {
 //		jack : 77
 		
 		return p1.score - p2.score;
-
 	}
 }
 
