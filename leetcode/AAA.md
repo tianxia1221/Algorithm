@@ -1,4 +1,33 @@
+[https://www.simon96.online/2018/10/18/Typora%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%AD%E6%96%87%E7%89%88%EF%BC%89/](https://www.simon96.online/2018/10/18/Typora入门（中文版）/)
+
 # AAA
+
+```java
+<details>
+  <summary>什么是iuap design</summary>
+  iuap design 是用友网络FED团队开发的企业级应用前端集成解决方案。
+</details>
+```
+
+
+
+<details>
+  <summary><mark><font color=darkred>点击查看详细内容</font></mark></summary>
+  <p> - 测试 测试测试</p>
+  <pre><code>  
+for i in a:
+    print(i)
+  </code></pre>
+</details>
+
+<details>
+  <summary><mark><font color=darkred>点击查看详细内容</font></mark></summary>
+  <p> - 测试 测试测试</p>
+  <pre><code>  
+for i in a:
+    print(i)
+  </code></pre>
+</details>
 
 ## bbb
 
@@ -75,8 +104,10 @@ $$
 $$
 
 ```python
+<details>
 def helloworld():
     print("hello, world!")
+    </details>
 ```
 
 
@@ -120,4 +151,24 @@ H~2~O
 ==高亮==
 
 
+
+这个例子的脚注为[1](http://www.mamicode.com/info-detail-2794030.html#fn1)。
+
+这个例子的脚注为[1](http://www.mamicode.com/info-detail-2794030.html#fn1)。
+
+<center>这是要居中的内容</center>
+<center>这是要居中的内容</center>
+<right>这是要居中的内容</right>
+<center>这是要居中的内容</center>
+```
+ <kbd>Ctrl</kbd>
+```
+
+ <kbd>Ctrl</kbd>
+
+\# 一级标题
+
+#aaaa
+
+! [sdfasfd](C:\Users\xtian5\Desktop\tmp\1.jpg)
 
