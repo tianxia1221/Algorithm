@@ -6,13 +6,42 @@
 
 https://www.jianshu.com/p/b30955885e6d
 
-### 
+## 1. 加粗
 
-# Markdown中如何添加特殊符号
+两个`**`或`__`会被HTML中的``标签包裹，例如：
+
+## 2. Markdown中如何添加特殊符号
 
 > https://blog.csdn.net/Logicr/article/details/82414854
 
+ eg:     $\vee$ 	
+
+```      $\vee$ 	
+      $\vee$ 	
+```
+
+## 3. Markdown数学公式语法
+
+> https://www.jianshu.com/p/e74eb43960a1
+
+## 4. 字体颜色
+
+```
+<font face="黑体">我是黑体字</font>
+<font face="微软雅黑">我是微软雅黑</font>
+<font face="STCAIYUN">我是华文彩云</font>
+<font color=#0099ff size=7 face="黑体">color=#0099ff size=72 face="黑体"</font>
+<font color=#00ffff size=72>color=#00ffff</font>
+<font color=gray size=72>color=gray</font>
+
+Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏览器默认值是 3
+
+```
+
+
+
 ## un-ordered list
+
 *   Red
 *   Green
 *   Blue
@@ -42,7 +71,6 @@ function test(){
 语法高亮：
 
 <details> ```java </details>
-
 ``` java
 String str = new String("hello world!");
 System.out.println(str)    
