@@ -26,6 +26,10 @@ https://www.jianshu.com/p/b30955885e6d
 
 ## 3. Markdown数学公式语法
 
+https://juejin.im/post/5a6721bd518825733201c4a2#heading-7
+
+\\(a + b\\)
+
 ```
 $x + y = z$ 
 ```
@@ -39,6 +43,8 @@ $x+y=z$
 
 > https://www.jianshu.com/p/e74eb43960a1
 
+
+
 ### 空格
 
 http://blog.sina.com.cn/s/blog_4ddef8f80100iwwv.html
@@ -51,6 +57,14 @@ http://blog.sina.com.cn/s/blog_4ddef8f80100iwwv.html
 | 小空格       | a\,b       | ![a\,b](http://upload.wikimedia.org/math/7/b/e/7bea99aed60ba5e1fe8a134ab43fa85f.png) | 1/6*m*宽度     |
 | 没有空格     | ab         | ![ab\,](http://upload.wikimedia.org/math/b/6/b/b6bd9dba2ebfca24731ae6dc3913e625.png) |                |
 | 紧贴         | a\!b       | ![a\!b](http://upload.wikimedia.org/math/0/f/b/0fbcad5fadb912e8afa6d113a75c83e4.png) | 缩进1/6*m*宽度 |
+
+```cpp
+$O(n^2)$
+```
+
+Time complexity : $O(n^2)$
+
+
 
 ## 4. 字体颜色
 
@@ -70,7 +84,7 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 
 ### 1. local file
 
-#### 1.1
+#### 1.1 way 1
 
 ```
 [link](#title) jump to title
@@ -78,7 +92,7 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 
 [link](#title) jump to title
 
-#### 1.2
+#### 1.2 way 2
 
 ```
 <a href="#其他markdown编辑器的实现方法">点击跳转</a>
