@@ -30,6 +30,5 @@ class Solution {
         }
 
         return res;
-
     }
 }

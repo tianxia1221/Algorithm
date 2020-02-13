@@ -1,8 +1,12 @@
 
 
+
+
+
+
 [toc]
 
-# title
+# Summary
 
 https://www.jianshu.com/p/b30955885e6d
 
@@ -25,6 +29,8 @@ https://www.jianshu.com/p/b30955885e6d
 ```
 
 ## 3. Markdown数学公式语法
+
+https://www.codecogs.com/latex/eqneditor.php
 
 https://juejin.im/post/5a6721bd518825733201c4a2#heading-7
 
@@ -80,6 +86,26 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 
 ```
 
+<font color=lightGreen size=7>LightGreen</font>
+
+### 字体背景色
+
+```
+<table><tr><td bgcolor=lightblue>背景色yellow</td></tr></table>
+```
+
+
+
+<table><tr><td bgcolor=LightPink>背景色yellow</td></tr></table>
+<table><tr><td bgcolor=Aquamarine>背景色yellow</td></tr></table>
+<table><tr><td bgcolor=Coral>背景色yellow</td></tr></table>
+<table><tr><td bgcolor=Chartreuse>背景色yellow</td></tr></table>
+<table><tr><td bgcolor=DarkCyan>背景色yellow</td></tr></table>
+<table><tr><td bgcolor=PaleGreen>背景色yellow</td></tr></table>
+color name define：
+
+> https://www.w3schools.com/colors/colors_names.asp
+
 ## 5. Jump 
 
 ### 1. local file
@@ -87,10 +113,10 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 #### 1.1 way 1
 
 ```
-[link](#title) jump to title
+[link](#Summary) jump to title
 ```
 
-[link](#title) jump to title
+[link](#Summary) jump to title
 
 #### 1.2 way 2
 
@@ -100,7 +126,7 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 
 按住Ctrl(Cmd)点击下面的连接就会跳到“其他markdown编辑器的实现方法”这一小节标题
 
-<a href="#title">点击跳转</a>
+<a href="#Summary">点击跳转</a>
 
 ### 2. Other file
 
@@ -145,6 +171,45 @@ H~2~O
 ## 8.快捷方式
 
 > 以上就是Markdown的基本的使用，最后奉上Markdown编辑器快捷键：· 加粗 Ctrl + B· 斜体 Ctrl + I· 引用 Ctrl + Q· 插入链接 Ctrl + L· 插入代码 Ctrl + K· 插入图片 Ctrl + G· 提升标题 Ctrl + H· 有序列表 Ctrl + O· 无序列表 Ctrl + U· 横线 Ctrl + R· 撤销 Ctrl + Z· 重做 Ctrl + Y
+
+插入链接： `Ctrl + K`
+
+插入图片： `Ctrl + Shift + I`
+
+引用：  `Ctrl + Shift + Q`
+
+删除线： `Alt+Shift+5`
+
+创建表格: `Ctrl + T`
+
+```
+ypora快捷键整合
+​```
+Ctrl+1  一阶标题    Ctrl+B  字体加粗
+Ctrl+2  二阶标题    Ctrl+I  字体倾斜
+Ctrl+3  三阶标题    Ctrl+U  下划线
+Ctrl+4  四阶标题    Ctrl+Home   返回Typora顶部
+Ctrl+5  五阶标题    Ctrl+End    返回Typora底部
+Ctrl+6  六阶标题    Ctrl+T  创建表格
+Ctrl+L  选中某句话   Ctrl+K  创建超链接
+Ctrl+D  选中某个单词  Ctrl+F  搜索
+Ctrl+E  选中相同格式的文字   Ctrl+H  搜索并替换
+Alt+Shift+5 删除线 Ctrl+Shift+I    插入图片
+Ctrl+Shift+M    公式块 Ctrl+Shift+Q    引用
+
+注：一些实体符号需要在实体符号之前加”\”才能够显示
+​```
+```
+
+
+
+```
+创建表格
+```
+
+```
+Alt+Shift+5 删除线 Ctrl+Shift+I
+```
 
 ## 9. List
 
@@ -215,7 +280,13 @@ _   底线
 !   惊叹号
 ```
 
-##  
+## 12 . 引用
+
+> aa
+
+> > bb
+
+> > > cc
 
 - [ ] a task list item
 - [ ] list syntax required
@@ -223,97 +294,80 @@ _   底线
 - [ ] incomplete
 - [x] completed
 
+## 13 . 表格
 
-
-例如：
 ```
-function test(){
-  console.log("notice the blank line before this function?");
-}
-```
-语法高亮：
-
-<details> ```java </details>
-``` java
-String str = new String("hello world!");
-System.out.println(str)    
+表头|表头|表头
+-|:-:|-:
+内容|内容|内容
+内容|内容|内容
 ```
 
+| 表头 | 表头 | 表头 |
+| ---- | :--: | ---: |
+| 内容 | 内容 | 内容 |
+| 内容 | 内容 | 内容 |
 
-$$
-\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \
-\frac{\partial X}{\partial u} & \frac{\partial Y}{\partial u} & 0 \
-\frac{\partial X}{\partial v} & \frac{\partial Y}{\partial v} & 0 \
-\end{vmatrix}
-$$
+## 14. 首行缩进
+
+```xml
+&emsp;&emsp;这是首行缩进的文本
+```
+
+&emsp;&emsp;这是首行缩进的文本
+
+{% tabs 选项卡, 2 %}
+
+## 15. 表情符号
+
+:blush:
+
+```
+:smile -- 无法显示
+```
+
+## 16. 文本居中 / 换行
+
+```
+这是要居中的内容
+```
+
+<center>这是要居中的内容</center>
+aaa<br/>bbb
+
+
+
+## 17. HTML
+
+```
+使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+<kbd> </kbd> -- 白色框框
+```
+
+```
+<kbd>Ctrl</kbd>
+
+```
+
+ <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
 
 | First Header | Second Header |
 | ------------ | ------------- |
 | Content Cell | Content Cell  |
 | Content Cell | Content Cell  |
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ | :-------------: | ------------: |
-| col 3 is      | some wordy text |         $1600 |
-| col 2 is      |    centered     |           $12 |
-| zebra stripes |    are neat     |            $1 |
+<details>
+    <summary>I have keys but no locks. I have space but no room. You can enter but can't leave. What am I?</summary>
+    A keyboard.
+    sfsdfs<br/>
+    sdfsdfsdf<br/>
+    sdfsdf<br/>
+    sdfsdf<br/>
+</details>
 
-```markdown
-你可以使用脚注像这样[^脚注]
-[^脚注]: 这里写脚注的*文本*
+```Markdown
+<video src="xxx.mp4" />
 ```
 
-
-
-
-
-你可以使用脚注像这样[^脚注]
-
-[^脚注]: 这里写脚注的*文本*
-
-你可以使用脚注像这样[^tx]
-
-
-
-This is [an example](https://baidu.com/ "Title") inline link.
-
-[This link](http://example.net/) has no title attribute.
-
-
-
-This is [an example][id] reference-style link.
-
-Then, anywhere in the document, you define your link label like this, on a line by itself:
-
-[id]: http://example.com/  "Optional Title Here"
-
-
-
-[Google][]
-And then define the link:
-
-[Google]: http://google.com/
-
-
-
-<i@typora.io> 就变成了i@typora.io.
-
-![](C:\Users\xtian5\Desktop\tmp\集体.jpg "Optional title")
-
-``fasdf
-
-`` sdfasfa
-
-<a href="http://typora.io" target="_blank">link</a>.
-
-
-
-- 使用`~`来包裹下标内容，例如：`H~2~O`,H2O， `X~long\ text~`/，Xlong text H~2~o
-- 使用`^`包裹上标内容，例如`X^2^`,X2
-- 
-
-X^2^
-
-
+<video src="C:\Users\xtian5\Documents\1.课程介绍和TDD Demo.mp4" />
 
