@@ -18,11 +18,11 @@ class MyComparator implements Comparator {
 //			return -1;
 //		else
 //			return 0;
-//		
+//
 //		jim : 92
 //		tom : 89
 //		jack : 77
-		
+
 		return p1.score - p2.score;
 	}
 }

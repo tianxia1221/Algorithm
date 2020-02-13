@@ -1,8 +1,8 @@
 class Solution {
 
     class Pair {
-        public int first;
-        public int second;
+        int first;
+        int second;
 
         Pair(Pair pair) {
             this.first = pair.first;
