@@ -91,17 +91,17 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 ### 字体背景色
 
 ```
-<table><tr><td bgcolor=lightblue>背景色yellow</td></tr></table>
+<table><tr><td bgcolor=lightblue>背景色</td></tr></table>
 ```
 
 
 
-<table><tr><td bgcolor=LightPink>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=Aquamarine>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=Coral>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=Chartreuse>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=DarkCyan>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=PaleGreen>背景色yellow</td></tr></table>
+<table><tr><td bgcolor=LightPink>背景色</td></tr></table>
+<table><tr><td bgcolor=Aquamarine>背景色</td></tr></table>
+<table><tr><td bgcolor=Coral>背景色</td></tr></table>
+<table><tr><td bgcolor=Chartreuse>背景色</td></tr></table>
+<table><tr><td bgcolor=DarkCyan>背景色</td></tr></table>
+<table><tr><td bgcolor=PaleGreen>背景色</td></tr></table>
 color name define：
 
 > https://www.w3schools.com/colors/colors_names.asp
@@ -320,11 +320,7 @@ _   底线
 
 ## 15. 表情符号
 
-:blush:
-
-```
-:smile -- 无法显示
-```
+:blush: :smile -- 无法显示  :smile:
 
 ## 16. 文本居中 / 换行
 
@@ -367,7 +363,94 @@ aaa<br/>bbb
 
 ```Markdown
 <video src="xxx.mp4" />
+<audio src="xxx.mp3" />
 ```
 
 <video src="C:\Users\xtian5\Documents\1.课程介绍和TDD Demo.mp4" />
+```
+<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='//codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/jeangontijo/pen/OxVywj/'>Fancy Animated SVG Menu</a> by Jean Gontijo (<a href='https://codepen.io/jeangontijo'>@jeangontijo</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+```
+
+<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='//codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/jeangontijo/pen/OxVywj/'>Fancy Animated SVG Menu</a> by Jean Gontijo (<a href='https://codepen.io/jeangontijo'>@jeangontijo</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<!-- I am some comments
+not end, not end...
+here the comment ends -->
+
+```
+<!-- I am some comments
+not end, not end...
+here the comment ends -->
+```
+
+## 18. Diagrams
+
+https://support.typora.io/Draw-Diagrams-With-Markdown/
+
+~~~gfm
+```mermaid
+pie
+    title Pie Chart
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 150 
+```
+~~~
+
+```mermaid
+pie
+    title Pie Chart
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 150 
+```
+
+~~~gfm
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+~~~
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+****
+
+```mermaid
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+
+sequenceDiagram    participant Alice    participant Bob    Alice->>John: Hello John, how are you?    loop Healthcheck        John->>John: Fight against hypochondria    end    Note right of John: Rational thoughts <br/>prevail!    John-->>Alice: Great!    John->>Bob: How about you?    Bob-->>John: Jolly good!
 
