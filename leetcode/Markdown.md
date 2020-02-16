@@ -22,6 +22,12 @@ https://www.jianshu.com/p/b30955885e6d
 
 > https://blog.csdn.net/Logicr/article/details/82414854
 
+```
+&rarr;
+```
+
+**→**
+
  eg:     $\vee$ 	
 
 ```      $\vee$ 	
@@ -47,9 +53,16 @@ $$
 
 $x+y=z$
 
+```
+  $=2*3^k = 2*3^{log_3 m*n} = 2*m*n$ 
+  //Suppose $m*n = 3^k$ &rarr; $k = \log_3 m*n,$
+```
+
+  $=2*3^k = 2*3^{log_3 m*n} = 2*m*n$ 
+
+//Suppose $m*n = 3^k$ &rarr; $k = \log_3 m*n,$
+
 > https://www.jianshu.com/p/e74eb43960a1
-
-
 
 ### 空格
 
@@ -70,7 +83,7 @@ $O(n^2)$
 
 Time complexity : $O(n^2)$
 
-
+Time complexity : $O(3 * log n) ≈ O(log n)$  
 
 ## 4. 字体颜色
 
@@ -434,23 +447,9 @@ stateDiagram
     Crash --> [*]
 ```
 
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-
-sequenceDiagram    participant Alice    participant Bob    Alice->>John: Hello John, how are you?    loop Healthcheck        John->>John: Fight against hypochondria    end    Note right of John: Rational thoughts <br/>prevail!    John-->>Alice: Great!    John->>Bob: How about you?    Bob-->>John: Jolly good!
-
+stateDiagram
+    state list {
+        [*] --> bigQ
+        bigQ --> smallQ
+        smallQ --> [*]
+    }
