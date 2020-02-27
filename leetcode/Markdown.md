@@ -8,6 +8,8 @@
 
 # Summary
 
+C:\Program Files\Typora\resources\app\Docs
+
 https://www.jianshu.com/p/b30955885e6d
 
 ## 1. 加粗
@@ -115,7 +117,7 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 <table><tr><td bgcolor=Chartreuse>背景色</td></tr></table>
 <table><tr><td bgcolor=DarkCyan>背景色</td></tr></table>
 <table><tr><td bgcolor=PaleGreen>背景色</td></tr></table>
-color name define：
+<table><tr><td bgcolor=PaleTurquoise>背景色</td></tr></table>
 
 > https://www.w3schools.com/colors/colors_names.asp
 

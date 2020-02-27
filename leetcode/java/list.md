@@ -1,6 +1,8 @@
 [toc]
 
-## 1. Initialize an ArrayList
+# Initialize
+
+## 1. Initialize ArrayList
 
 > https://www.geeksforgeeks.org/initialize-an-arraylist-in-java/
 
@@ -38,5 +40,12 @@
 // create a ArrayList Integer type 
         // and Initialize an ArrayList with arr 
         List<Integer> gfg = new ArrayList<Integer>(arr);
+```
+
+## 2. Initialize an Array
+
+```java
+ int[] count = new int[26];
+ Arrays.fill(count, 1);
 ```
 
