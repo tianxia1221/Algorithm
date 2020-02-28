@@ -1,6 +1,4 @@
-# Summary
-
-* [Introduction](README.md)
+# Index
 
 
 * Array
@@ -43,10 +41,10 @@
 * Priority Queue
 	* [23. Merge k Sorted Lists](leetcode/23.md)
 	* [215. Kth Largest Element in an Array](leetcode/215.md)
-    * [295. Find Median from Data Stream](leetcode/295.md)
-    * [347. Top K Frequent Elements](leetcode/347.md)
-    * [329. Longest Increasing Path in a Matrix](leetcode/329.md)
-    * [378. Kth Smallest Element in a Sorted Matrix](leetcode/378.md)
+  * [295. Find Median from Data Stream](leetcode/295.md)
+  * [347. Top K Frequent Elements](leetcode/347.md)
+  * [329. Longest Increasing Path in a Matrix](leetcode/329.md)
+  * [378. Kth Smallest Element in a Sorted Matrix](leetcode/378.md)
   
 * String
     * Palindromic
@@ -98,6 +96,8 @@
 * Sort
     * Quick Sort
       * [215. Kth Largest Element in an Array](leetcode/215.md)
+    * Three Partition
+      * [75. Sort Colors](leetcode/75.md)
     
 * Binary Search
     * Array
@@ -149,14 +149,11 @@
 * Integer
 	* [7. Reverse Integer](leetcode/7.md)
 	
-
 * Others
 
-  * 
   * [36. Valid Sudoku](leetcode/36.md)
   * [38. Count and Say](leetcode/38.md)
-
   * [41. First Missing Positive](leetcode/41.md)
-
-  * [48. Rotate Image](leetcode/48.md)
+* [48. Rotate Image](leetcode/48.md)
   * [66. Plus One](leetcode/66.md)
+* [73. Set Matrix Zeroes](leetcode/73.md)
