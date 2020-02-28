@@ -23,41 +23,53 @@
 [202. Happy Number](leetcode/202.md) 
 
 [206. Reverse Linked List](leetcode/206.md)
+
 [287. Find the Duplicate Number](leetcode/287.md)
 
 ### Common
 
 [2. Add Two Numbers](leetcode/2.md)
+
 [19. Remove Nth Node From End of List](leetcode/19md) 
+
 [23.Merge k Sorted Lists](leetcode/23.md) 
 
 ## Tree 
 
 [230. Kth Smallest Element in a BST](leetcode/230.md)
+
 [236. Lowest Common Ancestor of a Binary Tree](leetcode/236.md)
 
 ## Trie
 
 [208. Implement Trie (Prefix Tree)](leetcode/208.md)
+
 [212. Word Search II](leetcode/212.md)
 
 ## Graph
 
 [207. Course Schedule](leetcode/207.md)
+
 [210. Course Schedule II](leetcode/210.md)
 
 ## Stack
 
 [20. Valid Parentheses](leetcode/20.md)
+
 [341. Flatten Nested List Iterator](leetcode/341.md)
 
 ## Priority Queue
 
 [23. Merge k Sorted Lists](leetcode/23.md)
+
 [215. Kth Largest Element in an Array](leetcode/215.md)
+
 [295. Find Median from Data Stream](leetcode/295.md)
+
 [347. Top K Frequent Elements](leetcode/347.md)
+
 [329. Longest Increasing Path in a Matrix](leetcode/329.md)
+
 [378. Kth Smallest Element in a Sorted Matrix](leetcode/378.md)
 
 ## String
@@ -89,16 +101,22 @@
 ## Divide and Conquer
 
 [23. Merge k Sorted Lists](leetcode/23.md) 
+
 [50. Pow(x, n)](leetcode/50.md) 
+
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
+
 [395. Longest Substring with At Least K Repeating Characters](leetcode/395.md)
 
 ## DP
-
 [10. Regular Expression Matching](leetcode/10.md)
+
 [54. Spiral Matrix](leetcode/54.md)
+
 [62. Unique Paths ](leetcode/62.md) - easy
+
 [300. Longest Increasing Subsequence](leetcode/300.md)
+
 [322. Coin Change](leetcode/322.md)
 
 ## Greedy
@@ -110,7 +128,9 @@
 ## Backtracking
 
 [17. Letter Combinations of a Phone Number](leetcode/17.md)
+
 [22. Generate Parentheses](leetcode/22.md)
+
 [46. Permutations](leetcode/46.md)
 
 ## Sort
@@ -128,9 +148,13 @@
 
 ### Array
 [4. Median of Two Sorted Arrays](leetcode/4.md) 
+
 [33. Search in Rotated Sorted Array](leetcode/33.md) 
+
 [34. Find First and Last Position of Element in Sorted Array](leetcode/34.md) 
+
 [300. Longest Increasing Subsequence](leetcode/300.md)
+
 ### Tree
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
 ### Matrix
@@ -141,22 +165,31 @@
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
 ## DFS
 [207. Course Schedule](leetcode/207.md)
+
 [329. Longest Increasing Path in a Matrix](leetcode/329.md)
 ## BFS
 
 ## Bit Manipulation
 [29. Divide Two Integers](leetcode/29.md)
+
 [190. Reverse Bits](leetcode/190.md)
+
 [191.Number of 1 Bits](leetcode/191.md)
+
 [268. Missing Number](leetcode/268.md)
+
 [289. Game of Life](leetcode/289.md)
+
 [371. Sum of Two Integers](leetcode/371.md)
 
 ## Random
 
 [169. Majority Element](leetcode/169.md)
+
 [380.Insert Delete GetRandom O(1)](leetcode/380.md)
+
 [382. Linked List Random Node](leetcode/382.md)
+
 [384. Shuffle an Array](leetcode/384.md)
 
 ## Two Points
@@ -166,7 +199,9 @@
 ## Squeeze
 
 [11. Container With Most Water](leetcode/11.md)
+
 [15. 3Sum](leetcode/15.md)
+
 [42. Trapping Rain Water](leetcode/42.md)
 
 ## Integer
@@ -175,9 +210,12 @@
 
 ## Others
 
-
 [36. Valid Sudoku](leetcode/36.md)
+
 [38. Count and Say](leetcode/38.md)
+
 [41. First Missing Positive](leetcode/41.md)
+
 [48. Rotate Image](leetcode/48.md)
+
 [66. Plus One](leetcode/66.md)
