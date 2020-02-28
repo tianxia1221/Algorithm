@@ -113,7 +113,7 @@
 
 [54. Spiral Matrix](leetcode/54.md)
 
-[62. Unique Paths ](leetcode/62.md) - easy
+[62. Unique Paths ](leetcode/62.md)
 
 [300. Longest Increasing Subsequence](leetcode/300.md)
 
