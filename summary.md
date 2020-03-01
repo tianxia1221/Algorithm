@@ -1,6 +1,6 @@
 [toc]
 
-# Summary
+# 1. Data Structure
 
 ## Array
 
@@ -35,6 +35,20 @@
 [23.Merge k Sorted Lists](leetcode/23.md) 
 
 ## Tree 
+
+[94. Binary Tree Inorder Traversal](leetcode/94.md)
+
+[98. Validate Binary Search Tree](leetcode/98.md)
+
+[101. Symmetric Tree](leetcode/101.md)
+
+[102. Binary Tree Level Order Traversal](leetcode/102.md)
+
+[103. Binary Tree Zigzag Level Order Traversal](leetcode/103.md)
+
+[105. Construct Binary Tree from Preorder and Inorder Traversal](leetcode/105.md)
+
+[116. Populating Next Right Pointers in Each Node](leetcode/116.md)
 
 [230. Kth Smallest Element in a BST](leetcode/230.md)
 
@@ -94,9 +108,19 @@
 
 [3. Longest Substring Without Repeating Characters)](leetcode/3.md)
 
+[76. Minimum Window Substring](leetcode/76.md)
+
   ### Others
 
 [8. String to Integer (atoi)](leetcode/8.md)
+
+## Integer
+
+[7. Reverse Integer](leetcode/7.md)
+
+
+
+# 2. Algorithms
 
 ## Divide and Conquer
 
@@ -115,6 +139,12 @@
 
 [62. Unique Paths ](leetcode/62.md)
 
+[78. Subsets ](leetcode/78.md)
+
+[91. Decode Ways](leetcode/91.md)
+
+[121. Best Time to Buy and Sell Stock](leetcode/121.md)
+
 [300. Longest Increasing Subsequence](leetcode/300.md)
 
 [322. Coin Change](leetcode/322.md)
@@ -125,6 +155,8 @@
 
 [55. Jump Game](leetcode/55.md)
 
+[122. Best Time to Buy and Sell Stock II](leetcode/122.md)
+
 ## Backtracking
 
 [17. Letter Combinations of a Phone Number](leetcode/17.md)
@@ -132,6 +164,8 @@
 [22. Generate Parentheses](leetcode/22.md)
 
 [46. Permutations](leetcode/46.md)
+
+[78. Subsets](leetcode/78.md)
 
 ## Sort
 
@@ -159,6 +193,7 @@
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
 ### Matrix
 [240. Search a 2D Matrix II](leetcode/240.md)
+
 ### Others
 [69. Sqrt(x) II](leetcode/69.md)
 ## Binary Index Tree
@@ -166,8 +201,16 @@
 ## DFS
 [207. Course Schedule](leetcode/207.md)
 
+[79. Word Search](leetcode/79.md)
+
 [329. Longest Increasing Path in a Matrix](leetcode/329.md)
 ## BFS
+
+[102. Binary Tree Level Order Traversal](leetcode/102.md)
+
+[103. Binary Tree Zigzag Level Order Traversal](leetcode/103.md)
+
+[116. Populating Next Right Pointers in Each Node](leetcode/116.md)
 
 ## Bit Manipulation
 [29. Divide Two Integers](leetcode/29.md)
@@ -204,9 +247,9 @@
 
 [42. Trapping Rain Water](leetcode/42.md)
 
-## Integer
+### Special
 
-[7. Reverse Integer](leetcode/7.md)
+[84. Largest Rectangle in sogram](leetcode/84.md)
 
 ## Others
 

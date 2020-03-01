@@ -1,9 +1,3 @@
-
-
-
-
-
-
 [toc]
 
 # Summary
@@ -109,8 +103,7 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 <table><tr><td bgcolor=lightblue>背景色</td></tr></table>
 ```
 
-
-
+<table><tr><td bgcolor=PaleTurquoise>   </td></tr></table>
 <table><tr><td bgcolor=LightPink>背景色</td></tr></table>
 <table><tr><td bgcolor=Aquamarine>背景色</td></tr></table>
 <table><tr><td bgcolor=Coral>背景色</td></tr></table>
@@ -118,8 +111,9 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 <table><tr><td bgcolor=DarkCyan>背景色</td></tr></table>
 <table><tr><td bgcolor=PaleGreen>背景色</td></tr></table>
 <table><tr><td bgcolor=PaleTurquoise>背景色</td></tr></table>
-
 > https://www.w3schools.com/colors/colors_names.asp
+
+>  https://blog.csdn.net/qq_41082953/article/details/102922677
 
 ## 5. Jump 
 
@@ -323,6 +317,43 @@ _   底线
 | 内容 | 内容 | 内容 |
 | 内容 | 内容 | 内容 |
 
+```
+<table>
+    <tr>
+        <td bgcolor=#FF69B4>第一列</td> 
+        <td>第二列</td>
+        <td>第三列</td> 
+   </tr>
+    <tr>
+        <td colspan="2" bgcolor=#7B68EE>合并第1，2列</td>
+        <td>第2行，第3列</td >    
+    </tr>
+    <tr>
+        
+        <td>第3行，第3列</td>     
+        <td colspan="2" bgcolor=#ADFF2F>合并第1，2列</td>
+    </tr>
+</table>
+```
+
+<table>
+    <tr>
+        <td bgcolor=#FF69B4>第一列</td> 
+        <td>第二列</td>
+        <td>第三列</td> 
+   </tr>
+    <tr>
+        <td colspan="2"bgcolor=#7B68EE>合并第1，2列</td>
+        <td>第2行，第3列</td>    
+    </tr>
+    <tr>
+        <td colspan="1" bgcolor=#ADFF2F>合并第1，2列</td>
+        <td>第3行，第3列</td>    
+    </tr>
+</table>
+
+
+
 ## 14. 首行缩进
 
 ```xml
@@ -404,6 +435,49 @@ here the comment ends -->
 
 https://support.typora.io/Draw-Diagrams-With-Markdown/
 
+
+
+~~~mermaid
+```chart
+,Budget,Income,Expenses,Debt
+June,5000,8000,4000,6000
+July,3000,1000,4000,3000
+Aug,5000,7000,6000,3000
+Sep,7000,2000,3000,1000
+Oct,6000,5000,4000,2000
+Nov,4000,3000,5000,
+
+type: pie
+title: Monthly Revenue
+x.title: Amount
+y.title: Month
+y.suffix: $
+```
+~~~
+
+~~~text
+```chart
+,预算,收入,花费,债务
+June,5000,8000,4000,6000
+July,3000,1000,4000,3000
+Aug,5000,7000,6000,3000
+Sep,7000,2000,3000,1000
+Oct,6000,5000,4000,2000
+Nov,4000,3000,5000,
+
+type: pie
+title: 每月收益
+x.title: Amount
+y.title: Month
+y.suffix: $
+~~~
+
+```mermaid
+	
+```
+
+
+
 ~~~gfm
 ```mermaid
 pie
@@ -412,7 +486,10 @@ pie
     "Cats" : 85
     "Rats" : 150 
 ```
+
 ~~~
+
+### pie
 
 ```mermaid
 pie
@@ -421,6 +498,8 @@ pie
     "Cats" : 85
     "Rats" : 150 
 ```
+
+### sequence
 
 ~~~gfm
 ```sequence
@@ -431,10 +510,13 @@ Bob-->Alice: I am good thanks!
 ~~~
 
 ```sequence
+
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
+
+### state
 
 ****
 
@@ -447,11 +529,107 @@ stateDiagram
     Moving --> Still
     Moving --> Crash
     Crash --> [*]
+    
 ```
 
-stateDiagram
-    state list {
-        [*] --> bigQ
-        bigQ --> smallQ
-        smallQ --> [*]
-    }
+### graph
+
+```mermaid
+graph LR
+	C(cname) --> D((dname))
+```
+
+#### direction
+
+> 1. TB（ top bottom）表示从上到下
+> 2. BT（bottom top）表示从下到上
+> 3. RL（right left）表示从右到左
+> 4. LR（left right）表示从左到右
+> 5. TD与TB一样表示从上到下
+
+#### node
+
+> 1. 默认节点 A
+> 2. 文本节点 B[bname]
+> 3. 圆角节点 C(cname)
+> 4. 圆形节点 D((dname))
+> 5. 非对称节点 E>ename]
+> 6. 菱形节点 F{fname}
+
+line
+
+> ```
+> 连线
+> 节点间的连接线有多种形状，而且可以在连接线中加入标签：
+> 
+> 箭头连接 A1–>B1
+> 开放连接 A2—B2
+> 标签连接 A3–text—B3 或者 A3—|text|B3
+> 箭头标签连接 A4–text –>B4 或者 A4–>|text|B4
+> 虚线开放连接 A5.-B5 或者 A5-.-B5 或者 A5..-B5
+> 虚线箭头连接 A6.->B6 或者 A6-.->B6
+> 标签虚线连接 A7-.text.-B7
+> 标签虚线箭头连接 A8-.text.->B8
+> 粗线开放连接 A9===B9
+> 粗线箭头连接 A10==>B10
+> 标签粗线开放连接 A11==text===B11
+> 标签粗线箭头连接 A12==text==>B12
+> ```
+>
+> 
+
+```mermaid
+graph TD
+	Object---P1((P1))
+	Object-->P2[P2]
+	P1===C1(C1)
+	P1---C2
+	P2---C1
+	P2---C2
+	C1---D>D]
+	C2---D
+	D-->|实例化|d
+	H{H} -->D
+	
+	
+```
+
+![](images\line1.png)
+
+![line2](images\line2.png)
+
+![](images\line3.png)
+
+![](images\line4.png)
+
+```vis
+  layout: bar
+  data: [
+    { key: 0, value: 5 },
+    { key: 1, value: 4 },
+    { key: 2, value: 7 },
+    { key: 3, value: 2 },
+    { key: 4, value: 4 },
+    { key: 5, value: 8 },
+    { key: 6, value: 3 },
+    { key: 7, value: 6 }
+  ]
+```
+
+```
+
+```
+
+```mermaid
+  layout: bar
+  data: [
+    { key: 0, value: 5 },
+    { key: 1, value: 4 },
+    { key: 2, value: 7 },
+    { key: 3, value: 2 },
+    { key: 4, value: 4 },
+    { key: 5, value: 8 },
+    { key: 6, value: 3 },
+    { key: 7, value: 6 }
+  ]
+```
