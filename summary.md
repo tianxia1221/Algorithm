@@ -16,9 +16,15 @@
 
 [49. Group Anagrams](leetcode/49.md)
 
+[128. Longest Consecutive Sequence](leetcode/128.md)
+
 ## Linked List
 
 ### Cycle Detection
+
+[141. Linked List Cycle ](leetcode/141.md) 
+
+[142. Linked List Cycle II ](leetcode/142.md) 
 
 [202. Happy Number](leetcode/202.md) 
 
@@ -33,6 +39,8 @@
 [19. Remove Nth Node From End of List](leetcode/19md) 
 
 [23.Merge k Sorted Lists](leetcode/23.md) 
+
+[138. Copy List with Random Pointer](leetcode/138.md) 
 
 ## Tree 
 
@@ -50,6 +58,8 @@
 
 [116. Populating Next Right Pointers in Each Node](leetcode/116.md)
 
+[124. Binary Tree Maximum Path Sum](leetcode/124.md)
+
 [230. Kth Smallest Element in a BST](leetcode/230.md)
 
 [236. Lowest Common Ancestor of a Binary Tree](leetcode/236.md)
@@ -61,6 +71,8 @@
 [212. Word Search II](leetcode/212.md)
 
 ## Graph
+
+[127. Word Ladder](leetcode/127.md)
 
 [207. Course Schedule](leetcode/207.md)
 
@@ -157,6 +169,8 @@
 
 [122. Best Time to Buy and Sell Stock II](leetcode/122.md)
 
+[134. Gas Station](leetcode/134.md)
+
 ## Backtracking
 
 [17. Letter Combinations of a Phone Number](leetcode/17.md)
@@ -166,6 +180,8 @@
 [46. Permutations](leetcode/46.md)
 
 [78. Subsets](leetcode/78.md)
+
+[131. Palindrome Partitioning](leetcode/131.md)
 
 ## Sort
 
@@ -246,6 +262,8 @@
 [15. 3Sum](leetcode/15.md)
 
 [42. Trapping Rain Water](leetcode/42.md)
+
+[134. Gas Station](leetcode/134.md)
 
 ### Special
 
