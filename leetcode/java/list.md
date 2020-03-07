@@ -49,3 +49,13 @@
  Arrays.fill(count, 1);
 ```
 
+## 3. Initialize a two dimension Array 
+
+```java
+        char[][] base = new char[n][n];
+        for(char[] str : base) {
+            Arrays.fill(str, '.');
+        }
+
+```
+

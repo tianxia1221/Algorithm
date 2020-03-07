@@ -6,6 +6,8 @@
 
 [56. Merge Intervals](leetcode/56.md)
 
+[162. Find Peak Element](leetcode/162.md)
+
 [189. Rotate Array](leetcode/189.md)
 
 [350. Intersection of Two Arrays II](leetcode/350.md)
@@ -16,7 +18,13 @@
 
 [49. Group Anagrams](leetcode/49.md)
 
+[146. LRU Cache](leetcode/146.md)
+
+[149. Max Points on a Line](leetcode/149.md)
+
 [128. Longest Consecutive Sequence](leetcode/128.md)
+
+[290. Word Pattern](leetcode/290.md)
 
 ## Linked List
 
@@ -42,6 +50,12 @@
 
 [138. Copy List with Random Pointer](leetcode/138.md) 
 
+[146. LRU Cache](leetcode/146.md)
+
+[148. Sort List](leetcode/148.md)
+
+[160. Intersection of Two Linked Lists](leetcode/160.md) 
+
 ## Tree 
 
 [94. Binary Tree Inorder Traversal](leetcode/94.md)
@@ -56,6 +70,10 @@
 
 [105. Construct Binary Tree from Preorder and Inorder Traversal](leetcode/105.md)
 
+[113. Path Sum](leetcode/113.md)
+
+[114. Flatten Binary Tree to Linked List](leetcode/114.md)
+
 [116. Populating Next Right Pointers in Each Node](leetcode/116.md)
 
 [124. Binary Tree Maximum Path Sum](leetcode/124.md)
@@ -67,6 +85,8 @@
 ## Trie
 
 [208. Implement Trie (Prefix Tree)](leetcode/208.md)
+
+[211. Add and Search Word - Data structure design](leetcode/211.md)
 
 [212. Word Search II](leetcode/212.md)
 
@@ -82,9 +102,19 @@
 
 [20. Valid Parentheses](leetcode/20.md)
 
+[150. Evaluate Reverse Polish Notation](leetcode/150.md)
+
+[155. Min Stack](leetcode/155.md)
+
 [341. Flatten Nested List Iterator](leetcode/341.md)
 
-## Priority Queue
+## Queue
+
+### Common
+
+[225. Implement Stack using Queues](leetcode/225.md)
+
+### Priority Queue
 
 [23. Merge k Sorted Lists](leetcode/23.md)
 
@@ -126,11 +156,11 @@
 
 [8. String to Integer (atoi)](leetcode/8.md)
 
+[187. Repeated DNA Sequences](leetcode/187.md)
+
 ## Integer
 
 [7. Reverse Integer](leetcode/7.md)
-
-
 
 # 2. Algorithms
 
@@ -139,6 +169,8 @@
 [23. Merge k Sorted Lists](leetcode/23.md) 
 
 [50. Pow(x, n)](leetcode/50.md) 
+
+[148. Sort List](leetcode/148.md)
 
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
 
@@ -156,6 +188,16 @@
 [91. Decode Ways](leetcode/91.md)
 
 [121. Best Time to Buy and Sell Stock](leetcode/121.md)
+
+[139. Word Break](leetcode/139.md)
+
+[140. Word Break II](leetcode/140.md)
+
+[152. Maximum Product Subarray](leetcode/152.md)
+
+[174. Dungeon Game](leetcode/174.md)
+
+[198. House Robber](leetcode/198.md)
 
 [300. Longest Increasing Subsequence](leetcode/300.md)
 
@@ -177,7 +219,11 @@
 
 [22. Generate Parentheses](leetcode/22.md)
 
+[40. Combination Sum II](leetcode/40.md)
+
 [46. Permutations](leetcode/46.md)
+
+[51. N-Queens](leetcode/51.md)
 
 [78. Subsets](leetcode/78.md)
 
@@ -203,6 +249,8 @@
 
 [34. Find First and Last Position of Element in Sorted Array](leetcode/34.md) 
 
+[35. Search Insert Position](leetcode/35.md) 
+
 [300. Longest Increasing Subsequence](leetcode/300.md)
 
 ### Tree
@@ -215,11 +263,18 @@
 ## Binary Index Tree
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
 ## DFS
-[207. Course Schedule](leetcode/207.md)
-
 [79. Word Search](leetcode/79.md)
 
+[113. Path Sum](leetcode/113.md)
+
+[207. Course Schedule](leetcode/207.md)
+
 [329. Longest Increasing Path in a Matrix](leetcode/329.md)
+
+[199. Binary Tree Right Side View](leetcode/199.md)
+
+[200. Number of Islands](leetcode/200.md)
+
 ## BFS
 
 [102. Binary Tree Level Order Traversal](leetcode/102.md)
@@ -228,8 +283,14 @@
 
 [116. Populating Next Right Pointers in Each Node](leetcode/116.md)
 
+[199. Binary Tree Right Side View](leetcode/199.md)
+
+[200. Number of Islands](leetcode/200.md)
+
 ## Bit Manipulation
 [29. Divide Two Integers](leetcode/29.md)
+
+[187. Repeated DNA Sequences](leetcode/187.md)
 
 [190. Reverse Bits](leetcode/190.md)
 
@@ -257,6 +318,8 @@
 
 ## Squeeze
 
+### Common
+
 [11. Container With Most Water](leetcode/11.md)
 
 [15. 3Sum](leetcode/15.md)
@@ -265,9 +328,17 @@
 
 [134. Gas Station](leetcode/134.md)
 
-### Special
+### Others
 
 [84. Largest Rectangle in sogram](leetcode/84.md)
+
+## State Transition
+
+[8. String to Integer (atoi)](leetcode/8.md)
+
+[207. Course Schedule](leetcode/207.md)
+
+[224. Basic Calculator](leetcode/224.md)
 
 ## Others
 

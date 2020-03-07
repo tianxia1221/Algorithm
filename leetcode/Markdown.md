@@ -22,7 +22,7 @@ https://www.jianshu.com/p/b30955885e6d
 &rarr;
 ```
 
-**→**
+*→
 
  eg:     $\vee$ 	
 
