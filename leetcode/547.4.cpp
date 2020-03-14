@@ -12,7 +12,7 @@ class DisjoinSet{
             }
         }
 
-        void unionelms(int i, int j){
+        void union(int i, int j){
 
             int pi = find(i);
             int pj = find(j);
@@ -52,7 +52,7 @@ public:
         DisjoinSet ds(M.size());
         for(int i=1; i<M.size(); i++) {
             for(int j=0; j<i; j++) {
-                if(M[i][j]) ds.unionelms(i,j);
+                if(M[i][j]) ds.union(i,j);
             }
         }
         return ds.getCount();

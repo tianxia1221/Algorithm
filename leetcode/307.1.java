@@ -1,3 +1,5 @@
+//Runtime: 21 ms, faster than 34.68% of Java online submissions for Range Sum Query - Mutable.
+//        Memory Usage: 48 MB, less than 81.25% of Java online submissions for Range Sum Query - Mutable.
 class NumArray {
     private int[] val;
     private int count;

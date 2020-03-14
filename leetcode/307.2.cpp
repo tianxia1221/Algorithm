@@ -31,7 +31,6 @@ public:
 	}
 
 	void update_node(int i, int val) {
-
 		int count = tree_nums.size();
 		while (i < count) {
 			tree_nums[i] += val;

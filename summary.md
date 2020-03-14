@@ -14,6 +14,8 @@
 
 [347. Top K Frequent Elements](leetcode/347.md)
 
+[409. Longest Palindrome](leetcode/409.md)
+
 ## Hash
 
 [49. Group Anagrams](leetcode/49.md)
@@ -82,6 +84,8 @@
 
 [236. Lowest Common Ancestor of a Binary Tree](leetcode/236.md)
 
+[449. Serialize and Deserialize BST](leetcode/449.md)
+
 ## Trie
 
 [208. Implement Trie (Prefix Tree)](leetcode/208.md)
@@ -108,6 +112,8 @@
 
 [341. Flatten Nested List Iterator](leetcode/341.md)
 
+[402. Remove K Digits](leetcode/402.md)
+
 ## Queue
 
 ### Common
@@ -127,6 +133,8 @@
 [329. Longest Increasing Path in a Matrix](leetcode/329.md)
 
 [378. Kth Smallest Element in a Sorted Matrix](leetcode/378.md)
+
+[407. Trapping Rain Water II](leetcode/407.md)
 
 ## String
 
@@ -203,6 +211,8 @@
 
 [322. Coin Change](leetcode/322.md)
 
+[376. Wiggle Subsequence](leetcode/376.md)
+
 ## Greedy
 
 [53. Maximum Subarray](leetcode/53.md)
@@ -212,6 +222,10 @@
 [122. Best Time to Buy and Sell Stock II](leetcode/122.md)
 
 [134. Gas Station](leetcode/134.md)
+
+[407. Trapping Rain Water II](leetcode/407.md)
+
+[455. Assign Cookies](leetcode/455.md)
 
 ## Backtracking
 
@@ -228,6 +242,8 @@
 [78. Subsets](leetcode/78.md)
 
 [131. Palindrome Partitioning](leetcode/131.md)
+
+[473. Matchsticks to Square](leetcode/473.md)
 
 ## Sort
 
@@ -254,14 +270,31 @@
 [300. Longest Increasing Subsequence](leetcode/300.md)
 
 ### Tree
+[307. Range Sum Query - Mutable](leetcode/307.md)
+
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
+
 ### Matrix
 [240. Search a 2D Matrix II](leetcode/240.md)
 
 ### Others
 [69. Sqrt(x) II](leetcode/69.md)
 ## Binary Index Tree
+
+[307. Range Sum Query - Mutable](leetcode/307.md)
+
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
+
+## Segment Tree
+
+[307. Range Sum Query - Mutable](leetcode/307.md)
+
+[315. Count of Smaller Numbers After Self](leetcode/315.md)
+
+## Union Find
+
+[547. Friend Circles](leetcode/547.md)
+
 ## DFS
 [79. Word Search](leetcode/79.md)
 
@@ -275,6 +308,10 @@
 
 [200. Number of Islands](leetcode/200.md)
 
+[473. Matchsticks to Square](leetcode/473.md)
+
+[547. Friend Circles](leetcode/547.md)
+
 ## BFS
 
 [102. Binary Tree Level Order Traversal](leetcode/102.md)
@@ -286,6 +323,8 @@
 [199. Binary Tree Right Side View](leetcode/199.md)
 
 [200. Number of Islands](leetcode/200.md)
+
+[547. Friend Circles](leetcode/547.md)
 
 ## Bit Manipulation
 [29. Divide Two Integers](leetcode/29.md)
@@ -339,6 +378,16 @@
 [207. Course Schedule](leetcode/207.md)
 
 [224. Basic Calculator](leetcode/224.md)
+
+[376. Wiggle Subsequence](leetcode/376.md)
+
+## Peak
+
+[162. Find Peak Element](leetcode/162.md)
+
+[376. Wiggle Subsequence](leetcode/376.md)
+
+[402. Remove K Digits](leetcode/402.md)
 
 ## Others
 
