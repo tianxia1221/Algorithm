@@ -1,6 +1,6 @@
 [toc]
 
-# 1. Data Structure
+# Data Structure
 
 ## Array
 
@@ -170,7 +170,7 @@
 
 [7. Reverse Integer](leetcode/7.md)
 
-# 2. Algorithms
+# Algorithms
 
 ## Divide and Conquer
 
@@ -340,6 +340,8 @@
 [289. Game of Life](leetcode/289.md)
 
 [371. Sum of Two Integers](leetcode/371.md)
+
+[473. Matchsticks to Square](leetcode/473.md)
 
 ## Random
 
