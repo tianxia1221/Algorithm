@@ -58,6 +58,12 @@ $x+y=z$
 
 //Suppose $m*n = 3^k$ &rarr; $k = \log_3 m*n,$
 
+```
+$$O(L^{X/2})$$
+```
+
+$$O(L^{X/2})$$
+
 > https://www.jianshu.com/p/e74eb43960a1
 
 ### 空格
@@ -80,6 +86,12 @@ $O(n^2)$
 Time complexity : $O(n^2)$
 
 Time complexity : $O(3 * log n) ≈ O(log n)$  
+
+```
+
+```
+
+
 
 ## 4. 字体颜色
 
@@ -115,7 +127,7 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 
 >  https://blog.csdn.net/qq_41082953/article/details/102922677
 
-## 5. Jump 
+## 5. 跳转
 
 ### 1. local file
 
@@ -220,7 +232,7 @@ Ctrl+Shift+M    公式块 Ctrl+Shift+Q    引用
 Alt+Shift+5 删除线 Ctrl+Shift+I
 ```
 
-## 9. List
+## 9. 列表
 
 - 无序列表使用*或+或-标识
 - 有序列表使用数字加.标识，例如：1.
@@ -604,5 +616,145 @@ graph TD
 
 
 
+## 自动编号标题
 
+![image-20200314221817805](images\auto_num.png)
+
+* click **Open Theme Folder**
+
+* create file **base.user.css**
+
+* add content
+
+  ```css
+  /** initialize css counter */
+  #write, .sidebar-content,.md-toc-content {
+      counter-reset: h1
+  }
+  
+  #write h1, .outline-h1, .md-toc-item.md-toc-h1  {
+      counter-reset: h2
+  }
+  
+  #write h2, .outline-h2, .md-toc-item.md-toc-h2 {
+      counter-reset: h3
+  }
+  
+  #write h3, .outline-h3, .md-toc-item.md-toc-h3 {
+      counter-reset: h4
+  }
+  
+  #write h4, .outline-h4, .md-toc-item.md-toc-h4 {
+      counter-reset: h5
+  }
+  
+  #write h5, .outline-h5, .md-toc-item.md-toc-h5 {
+      counter-reset: h6
+  }
+  
+  /** put counter result into headings */
+  #write h1:before, 
+  h1.md-focus.md-heading:before,
+  .outline-h1>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h1>.md-toc-inner:before{
+      counter-increment: h1;
+      content: counter(h1) " "
+  }
+  
+  #write h2:before, 
+  h2.md-focus.md-heading:before,
+  .outline-h2>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h2>.md-toc-inner:before{
+      counter-increment: h2;
+      content: counter(h1) "." counter(h2) " "
+  }
+  
+  #write h3:before,
+  h3.md-focus.md-heading:before,
+  .outline-h3>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h3>.md-toc-inner:before {
+      counter-increment: h3;
+      content: counter(h1) "." counter(h2) "." counter(h3) " "
+  }
+  
+  #write h4:before,
+  h4.md-focus.md-heading:before,
+  .outline-h4>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h4>.md-toc-inner:before  {
+      counter-increment: h4;
+      content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " "
+  }
+  
+  #write h5:before,
+  h5.md-focus.md-heading:before,
+  .outline-h5>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h5>.md-toc-inner:before  {
+      counter-increment: h5;
+      content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " "
+  }
+  
+  #write h6:before,
+  h6.md-focus.md-heading:before,
+  .outline-h6>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h6>.md-toc-inner:before {
+      counter-increment: h6;
+      content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " "
+  }
+  
+  /** override the default style for focused headings */
+  #write>h3.md-focus:before,
+  #write>h4.md-focus:before,
+  #write>h5.md-focus:before,
+  #write>h6.md-focus:before,
+  h3.md-focus:before,
+  h4.md-focus:before,
+  h5.md-focus:before,
+  h6.md-focus:before {
+      color: inherit;
+      border: inherit;
+      border-radius: inherit;
+      position: inherit;
+      left:initial;
+      float: none;
+      top:initial;
+      font-size: inherit;
+      padding-left: inherit;
+      padding-right: inherit;
+      vertical-align: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+  }
+  ```
+
+## 设置标题颜色
+
+  * click **Open Theme Folder** as above
+
+  * open github.css
+
+  * modify h style as following 
+
+    ```css
+    h1 {
+        padding-bottom: .3em;
+        font-size: 2.25em;
+        line-height: 1.2;
+        border-bottom: 1px solid #eee;
+    	color: #FFC300; //!!!
+    }
+    h2 {
+       padding-bottom: .3em;
+        font-size: 1.75em;
+        line-height: 1.225;
+        border-bottom: 1px solid #eee;
+    	/*background-color: #98FB98;*/
+    }
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.43;
+    	color: #2E8B57 //!!!
+    }
+    ```
+
+    
 
