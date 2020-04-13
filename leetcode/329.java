@@ -53,9 +53,6 @@ class Solution {
             memo[cur.x][cur.y] = curMaxVal;
             maxVal = Math.max(maxVal, curMaxVal);
         }
-
         return maxVal;
     }
-
-
 }

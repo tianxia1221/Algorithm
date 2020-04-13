@@ -1,12 +1,8 @@
-
-
-
-
-
-
 [toc]
 
 # Summary
+
+C:\Program Files\Typora\resources\app\Docs
 
 https://www.jianshu.com/p/b30955885e6d
 
@@ -21,6 +17,12 @@ https://www.jianshu.com/p/b30955885e6d
 > https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols
 
 > https://blog.csdn.net/Logicr/article/details/82414854
+
+```
+&rarr;
+```
+
+*→
 
  eg:     $\vee$ 	
 
@@ -47,9 +49,22 @@ $$
 
 $x+y=z$
 
+```
+  $=2*3^k = 2*3^{log_3 m*n} = 2*m*n$ 
+  //Suppose $m*n = 3^k$ &rarr; $k = \log_3 m*n,$
+```
+
+  $=2*3^k = 2*3^{log_3 m*n} = 2*m*n$ 
+
+//Suppose $m*n = 3^k$ &rarr; $k = \log_3 m*n,$
+
+```
+$$O(L^{X/2})$$
+```
+
+$$O(L^{X/2})$$
+
 > https://www.jianshu.com/p/e74eb43960a1
-
-
 
 ### 空格
 
@@ -69,6 +84,12 @@ $O(n^2)$
 ```
 
 Time complexity : $O(n^2)$
+
+Time complexity : $O(3 * log n) ≈ O(log n)$  
+
+```
+
+```
 
 
 
@@ -91,22 +112,22 @@ Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏�
 ### 字体背景色
 
 ```
-<table><tr><td bgcolor=lightblue>背景色yellow</td></tr></table>
+<table><tr><td bgcolor=lightblue>背景色</td></tr></table>
 ```
 
-
-
-<table><tr><td bgcolor=LightPink>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=Aquamarine>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=Coral>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=Chartreuse>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=DarkCyan>背景色yellow</td></tr></table>
-<table><tr><td bgcolor=PaleGreen>背景色yellow</td></tr></table>
-color name define：
-
+<table><tr><td bgcolor=PaleTurquoise>   </td></tr></table>
+<table><tr><td bgcolor=LightPink>背景色</td></tr></table>
+<table><tr><td bgcolor=Aquamarine>背景色</td></tr></table>
+<table><tr><td bgcolor=Coral>背景色</td></tr></table>
+<table><tr><td bgcolor=Chartreuse>背景色</td></tr></table>
+<table><tr><td bgcolor=DarkCyan>背景色</td></tr></table>
+<table><tr><td bgcolor=PaleGreen>背景色</td></tr></table>
+<table><tr><td bgcolor=PaleTurquoise>背景色</td></tr></table>
 > https://www.w3schools.com/colors/colors_names.asp
 
-## 5. Jump 
+>  https://blog.csdn.net/qq_41082953/article/details/102922677
+
+## 5. 跳转
 
 ### 1. local file
 
@@ -211,7 +232,7 @@ Ctrl+Shift+M    公式块 Ctrl+Shift+Q    引用
 Alt+Shift+5 删除线 Ctrl+Shift+I
 ```
 
-## 9. List
+## 9. 列表
 
 - 无序列表使用*或+或-标识
 - 有序列表使用数字加.标识，例如：1.
@@ -308,6 +329,43 @@ _   底线
 | 内容 | 内容 | 内容 |
 | 内容 | 内容 | 内容 |
 
+```
+<table>
+    <tr>
+        <td bgcolor=#FF69B4>第一列</td> 
+        <td>第二列</td>
+        <td>第三列</td> 
+   </tr>
+    <tr>
+        <td colspan="2" bgcolor=#7B68EE>合并第1，2列</td>
+        <td>第2行，第3列</td >    
+    </tr>
+    <tr>
+        
+        <td>第3行，第3列</td>     
+        <td colspan="2" bgcolor=#ADFF2F>合并第1，2列</td>
+    </tr>
+</table>
+```
+
+<table>
+    <tr>
+        <td bgcolor=#FF69B4>第一列</td> 
+        <td>第二列</td>
+        <td>第三列</td> 
+   </tr>
+    <tr>
+        <td colspan="2"bgcolor=#7B68EE>合并第1，2列</td>
+        <td>第2行，第3列</td>    
+    </tr>
+    <tr>
+        <td colspan="1" bgcolor=#ADFF2F>合并第1，2列</td>
+        <td>第3行，第3列</td>    
+    </tr>
+</table>
+
+
+
 ## 14. 首行缩进
 
 ```xml
@@ -320,11 +378,7 @@ _   底线
 
 ## 15. 表情符号
 
-:blush:
-
-```
-:smile -- 无法显示
-```
+:blush: :smile -- 无法显示  :smile:
 
 ## 16. 文本居中 / 换行
 
@@ -367,7 +421,340 @@ aaa<br/>bbb
 
 ```Markdown
 <video src="xxx.mp4" />
+<audio src="xxx.mp3" />
 ```
 
 <video src="C:\Users\xtian5\Documents\1.课程介绍和TDD Demo.mp4" />
+```
+<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='//codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/jeangontijo/pen/OxVywj/'>Fancy Animated SVG Menu</a> by Jean Gontijo (<a href='https://codepen.io/jeangontijo'>@jeangontijo</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+```
+
+<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='//codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/jeangontijo/pen/OxVywj/'>Fancy Animated SVG Menu</a> by Jean Gontijo (<a href='https://codepen.io/jeangontijo'>@jeangontijo</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<!-- I am some comments
+not end, not end...
+here the comment ends -->
+
+```
+<!-- I am some comments
+not end, not end...
+here the comment ends -->
+```
+
+## 18. Diagrams
+
+https://support.typora.io/Draw-Diagrams-With-Markdown/
+
+
+
+~~~mermaid
+```chart
+,Budget,Income,Expenses,Debt
+June,5000,8000,4000,6000
+July,3000,1000,4000,3000
+Aug,5000,7000,6000,3000
+Sep,7000,2000,3000,1000
+Oct,6000,5000,4000,2000
+Nov,4000,3000,5000,
+
+type: pie
+title: Monthly Revenue
+x.title: Amount
+y.title: Month
+y.suffix: $
+```
+~~~
+
+~~~text
+```chart
+,预算,收入,花费,债务
+June,5000,8000,4000,6000
+July,3000,1000,4000,3000
+Aug,5000,7000,6000,3000
+Sep,7000,2000,3000,1000
+Oct,6000,5000,4000,2000
+Nov,4000,3000,5000,
+
+type: pie
+title: 每月收益
+x.title: Amount
+y.title: Month
+y.suffix: $
+~~~
+
+```mermaid
+	
+```
+
+
+
+~~~gfm
+```mermaid
+pie
+    title Pie Chart
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 150 
+```
+
+~~~
+
+### pie
+
+```mermaid
+pie
+    title Pie Chart
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 150 
+```
+
+### sequence
+
+~~~gfm
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+~~~
+
+```sequence
+
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+### state
+
+****
+
+```mermaid
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+    
+```
+
+### graph
+
+```mermaid
+graph LR
+	C(cname) --> D((dname))
+```
+
+#### direction
+
+> 1. TB（ top bottom）表示从上到下
+> 2. BT（bottom top）表示从下到上
+> 3. RL（right left）表示从右到左
+> 4. LR（left right）表示从左到右
+> 5. TD与TB一样表示从上到下
+
+#### node
+
+> 1. 默认节点 A
+> 2. 文本节点 B[bname]
+> 3. 圆角节点 C(cname)
+> 4. 圆形节点 D((dname))
+> 5. 非对称节点 E>ename]
+> 6. 菱形节点 F{fname}
+
+line
+
+> ```
+> 连线
+> 节点间的连接线有多种形状，而且可以在连接线中加入标签：
+> 
+> 箭头连接 A1–>B1
+> 开放连接 A2—B2
+> 标签连接 A3–text—B3 或者 A3—|text|B3
+> 箭头标签连接 A4–text –>B4 或者 A4–>|text|B4
+> 虚线开放连接 A5.-B5 或者 A5-.-B5 或者 A5..-B5
+> 虚线箭头连接 A6.->B6 或者 A6-.->B6
+> 标签虚线连接 A7-.text.-B7
+> 标签虚线箭头连接 A8-.text.->B8
+> 粗线开放连接 A9===B9
+> 粗线箭头连接 A10==>B10
+> 标签粗线开放连接 A11==text===B11
+> 标签粗线箭头连接 A12==text==>B12
+> ```
+>
+> 
+
+```mermaid
+graph TD
+	Object---P1((P1))
+	Object-->P2[P2]
+	P1===C1(C1)
+	P1---C2
+	P2---C1
+	P2---C2
+	C1---D>D]
+	C2---D
+	D-->|实例化|d
+	H{H} -->D
+	
+	
+```
+
+![](images\line1.png)
+
+![line2](images\line2.png)
+
+![](images\line3.png)
+
+![](images\line4.png)
+
+
+
+## 自动编号标题
+
+![image-20200314221817805](images\auto_num.png)
+
+* click **Open Theme Folder**
+
+* create file **base.user.css**
+
+* add content
+
+  ```css
+  /** initialize css counter */
+  #write, .sidebar-content,.md-toc-content {
+      counter-reset: h1
+  }
+  
+  #write h1, .outline-h1, .md-toc-item.md-toc-h1  {
+      counter-reset: h2
+  }
+  
+  #write h2, .outline-h2, .md-toc-item.md-toc-h2 {
+      counter-reset: h3
+  }
+  
+  #write h3, .outline-h3, .md-toc-item.md-toc-h3 {
+      counter-reset: h4
+  }
+  
+  #write h4, .outline-h4, .md-toc-item.md-toc-h4 {
+      counter-reset: h5
+  }
+  
+  #write h5, .outline-h5, .md-toc-item.md-toc-h5 {
+      counter-reset: h6
+  }
+  
+  /** put counter result into headings */
+  #write h1:before, 
+  h1.md-focus.md-heading:before,
+  .outline-h1>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h1>.md-toc-inner:before{
+      counter-increment: h1;
+      content: counter(h1) " "
+  }
+  
+  #write h2:before, 
+  h2.md-focus.md-heading:before,
+  .outline-h2>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h2>.md-toc-inner:before{
+      counter-increment: h2;
+      content: counter(h1) "." counter(h2) " "
+  }
+  
+  #write h3:before,
+  h3.md-focus.md-heading:before,
+  .outline-h3>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h3>.md-toc-inner:before {
+      counter-increment: h3;
+      content: counter(h1) "." counter(h2) "." counter(h3) " "
+  }
+  
+  #write h4:before,
+  h4.md-focus.md-heading:before,
+  .outline-h4>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h4>.md-toc-inner:before  {
+      counter-increment: h4;
+      content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " "
+  }
+  
+  #write h5:before,
+  h5.md-focus.md-heading:before,
+  .outline-h5>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h5>.md-toc-inner:before  {
+      counter-increment: h5;
+      content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " "
+  }
+  
+  #write h6:before,
+  h6.md-focus.md-heading:before,
+  .outline-h6>.outline-item>.outline-label:before,
+  .md-toc-item.md-toc-h6>.md-toc-inner:before {
+      counter-increment: h6;
+      content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " "
+  }
+  
+  /** override the default style for focused headings */
+  #write>h3.md-focus:before,
+  #write>h4.md-focus:before,
+  #write>h5.md-focus:before,
+  #write>h6.md-focus:before,
+  h3.md-focus:before,
+  h4.md-focus:before,
+  h5.md-focus:before,
+  h6.md-focus:before {
+      color: inherit;
+      border: inherit;
+      border-radius: inherit;
+      position: inherit;
+      left:initial;
+      float: none;
+      top:initial;
+      font-size: inherit;
+      padding-left: inherit;
+      padding-right: inherit;
+      vertical-align: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+  }
+  ```
+
+## 设置标题颜色
+
+  * click **Open Theme Folder** as above
+
+  * open github.css
+
+  * modify h style as following 
+
+    ```css
+    h1 {
+        padding-bottom: .3em;
+        font-size: 2.25em;
+        line-height: 1.2;
+        border-bottom: 1px solid #eee;
+    	color: #FFC300; //!!!
+    }
+    h2 {
+       padding-bottom: .3em;
+        font-size: 1.75em;
+        line-height: 1.225;
+        border-bottom: 1px solid #eee;
+    	/*background-color: #98FB98;*/
+    }
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.43;
+    	color: #2E8B57 //!!!
+    }
+    ```
+
+    
 

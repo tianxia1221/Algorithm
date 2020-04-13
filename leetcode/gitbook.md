@@ -1,3 +1,5 @@
 > gitbook init
 >
-> gitbook server
+> gitbook build
+>
+> gitbook serve
