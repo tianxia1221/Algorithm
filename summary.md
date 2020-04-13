@@ -126,6 +126,8 @@
 
 [215. Kth Largest Element in an Array](leetcode/215.md)
 
+[218. The Skyline Problem](leetcode/218.md)
+
 [295. Find Median from Data Stream](leetcode/295.md)
 
 [347. Top K Frequent Elements](leetcode/347.md)
@@ -243,6 +245,8 @@
 
 [131. Palindrome Partitioning](leetcode/131.md)
 
+[140. Word Break II](leetcode/140.md)
+
 [473. Matchsticks to Square](leetcode/473.md)
 
 ## Sort
@@ -286,6 +290,8 @@
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
 
 ## Segment Tree
+
+[218. The Skyline Problem](leetcode/218.md)
 
 [307. Range Sum Query - Mutable](leetcode/307.md)
 
