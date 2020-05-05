@@ -215,6 +215,8 @@
 
 [376. Wiggle Subsequence](leetcode/376.md)
 
+[1434.Number of Ways to Wear Different Hats to Each Other](leetcode/1434.md)
+
 ## Greedy
 
 [53. Maximum Subarray](leetcode/53.md)
