@@ -740,21 +740,24 @@ graph TD
         font-size: 2.25em;
         line-height: 1.2;
         border-bottom: 1px solid #eee;
-    	color: #FFC300; //!!!
+    	color: #FFC300;
     }
     h2 {
        padding-bottom: .3em;
         font-size: 1.75em;
         line-height: 1.225;
         border-bottom: 1px solid #eee;
-    	/*background-color: #98FB98;*/
     }
     h3 {
         font-size: 1.5em;
         line-height: 1.43;
-    	color: #2E8B57 //!!!
+    	color: #2E8B57;
+    }
+    h4 {
+        font-size: 1.25em;
+	color: #800000;
     }
     ```
-
+    
     
 
