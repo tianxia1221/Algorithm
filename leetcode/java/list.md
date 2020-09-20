@@ -59,3 +59,9 @@
 
 ```
 
+## 4. Initialize original array
+
+```java
+    int[][] dirs = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
+```
+
