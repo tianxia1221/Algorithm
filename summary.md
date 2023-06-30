@@ -16,6 +16,10 @@
 
 [409. Longest Palindrome](leetcode/409.md)
 
+## Deque
+
+[239. Sliding Window Maximum](leetcode/239.md)
+
 ## Hash
 
 [49. Group Anagrams](leetcode/49.md)
@@ -46,7 +50,7 @@
 
 [2. Add Two Numbers](leetcode/2.md)
 
-[19. Remove Nth Node From End of List](leetcode/19md) 
+[19. Remove Nth Node From End of List](leetcode/19.md) 
 
 [23.Merge k Sorted Lists](leetcode/23.md) 
 
@@ -98,9 +102,18 @@
 
 [127. Word Ladder](leetcode/127.md)
 
-[207. Course Schedule](leetcode/207.md)
+[207. Course Schedule](leetcode/207.md) topological sorting
 
 [210. Course Schedule II](leetcode/210.md)
+
+[1584.MST最小生成树](leetcode/1584.md) 
+
+[2662-dijkstra](leetcode/2662-dijkstra.md)
+
+[743-Network Delay Time](leetcode/743.md) Dijkstra / Bellman-Ford / Floyd-Warshell 
+
+[778. Swim in Rising Water](leetcode/778.md) Dijkstra / Binary Search + BFS/DFS / Union-Find 
+
 
 ## Stack
 
@@ -275,6 +288,8 @@
 
 [300. Longest Increasing Subsequence](leetcode/300.md)
 
+[540. Single Element in a Sorted Array](leetcode/540.md)
+
 ### Tree
 [307. Range Sum Query - Mutable](leetcode/307.md)
 
@@ -411,3 +426,4 @@
 
 [66. Plus One](leetcode/66.md)
 
+​			
