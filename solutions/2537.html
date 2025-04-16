@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Legality Table</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #e0e0e0;
+        }
+
+        .header-bar {
+            background: linear-gradient(135deg, #1E90FF, #0047AB);
+            padding: 8px 15px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 0;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th {
+            background: linear-gradient(to right, #1E90FF, #0066CC);
+            color: white;
+            padding: 14px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            border: 1px solid #333;
+            padding: 12px;
+            color: #f0f0f0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #252525;
+        }
+
+        tr:hover {
+            background-color: #333;
+        }
+
+        .variable {
+            color: #4FC3F7; /* 亮蓝色表示变量 */
+            font-family: 'Consolas', monospace;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .number {
+            color: #81C784; /* 绿色表示数字 */
+            font-family: 'Consolas', monospace;
+        }
+
+        .not-legal {
+            color: #FF8A80; /* 柔和的红色 */
+            font-weight: bold;
+            position: relative;
+        }
+
+        .not-legal:after {
+            content: "✗";
+            margin-left: 5px;
+        }
+
+        .legal {
+            color: #69F0AE; /* 柔和的绿色 */
+            font-weight: bold;
+            position: relative;
+        }
+
+        .legal:after {
+            content: "✓";
+            margin-left: 5px;
+        }
+
+        .ellipsis {
+            color: #B0BEC5; /* 灰色表示省略号 */
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-bar">
+        <h1>区间合法性查询表</h1>
+    </div>
+
+    <table id="intervalTable">
+        <thead>
+            <tr>
+                <th>左端点</th>
+                <th>右端点</th>
+                <th>是否合法</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="variable">r</span> - <span class="number">1</span></td>
+                <td><span class="variable">r</span></td>
+                <td class="not-legal">否</td>
+            </tr>
+            <tr>
+                <td class="ellipsis">……</td>
+                <td><span class="variable">r</span></td>
+                <td class="not-legal">否</td>
+            </tr>
+            <tr>
+                <td><span class="variable">l</span> + <span class="number">2</span></td>
+                <td><span class="variable">r</span></td>
+                <td class="not-legal">否</td>
+            </tr>
+            <tr>
+                <td><span class="variable">l</span> + <span class="number">1</span></td>
+                <td><span class="variable">r</span></td>
+                <td class="not-legal">否</td>
+            </tr>
+            <tr>
+                <td><span class="variable">l</span></td>
+                <td><span class="variable">r</span></td>
+                <td class="not-legal">否</td>
+            </tr>
+            <tr>
+                <td><span class="variable">l</span> - <span class="number">1</span></td>
+                <td><span class="variable">r</span></td>
+                <td class="legal">是</td>
+            </tr>
+            <tr>
+                <td><span class="variable">l</span> - <span class="number">2</span></td>
+                <td><span class="variable">r</span></td>
+                <td class="legal">是</td>
+            </tr>
+            <tr>
+                <td class="ellipsis">……</td>
+                <td><span class="variable">r</span></td>
+                <td class="legal">是</td>
+            </tr>
+            <tr>
+                <td><span class="number">0</span></td>
+                <td><span class="variable">r</span></td>
+                <td class="legal">是</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        // 获取表格的 tbody 元素
+        const tbody = document.querySelector('#intervalTable tbody');
+        // 获取 tbody 中的所有行
+        const rows = Array.from(tbody.rows);
+        // 反转行的顺序
+        rows.reverse();
+        // 清空 tbody 中的内容
+        while (tbody.firstChild) {
+            tbody.removeChild(tbody.firstChild);
+        }
+        // 将反转后的行重新添加到 tbody 中
+        rows.forEach(row => {
+            tbody.appendChild(row);
+        });
+    </script>
+</body>
+</html>
