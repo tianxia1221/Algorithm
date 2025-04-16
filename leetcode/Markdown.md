@@ -36,6 +36,8 @@ https://www.codecogs.com/latex/eqneditor.php
 
 https://juejin.im/post/5a6721bd518825733201c4a2#heading-7
 
+https://www.jianshu.com/p/5a27d195678f
+
 \\(a + b\\)
 
 ```
@@ -605,6 +607,12 @@ graph TD
 	
 	
 ```
+```mermaid
+graph TD
+	X((X))--->|5|Y((i))
+
+```
+
 
 ![](images\line1.png)
 
@@ -761,3 +769,18 @@ graph TD
     
     
 
+```csharp
+using Mermaid.NET;
+
+namespace MermaidViewerApp
+{
+    class MermaidConverter
+    {
+        public static string ConvertToSvg(string mermaidCode)
+        {
+            var converter = new MermaidConverterBase();
+            return converter.Convert(mermaidCode);
+        }
+    }
+}
+```

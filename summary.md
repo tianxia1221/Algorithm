@@ -16,6 +16,10 @@
 
 [409. Longest Palindrome](leetcode/409.md)
 
+## 查分算法
+
+[2772. Apply Operations to Make All Array Elements Equal to Zero](leetcode/2772.md)
+
 ## Deque
 
 [239. Sliding Window Maximum](leetcode/239.md)
@@ -91,6 +95,8 @@
 [297. Serialize and Deserialize Binary Tree ](leetcode/297.md) Ostringstring instringstream
 
 [449. Serialize and Deserialize BST](leetcode/449.md)
+
+[310. Minimum Height Trees](leetcode/310.md)
 
 ## Trie
 
@@ -236,7 +242,7 @@
 
 [53. Maximum Subarray](leetcode/53.md)
 
-[55. Jump Game](leetcode/55.md)
+[55. Jump Game](leetcode/55.md)                   
 
 [122. Best Time to Buy and Sell Stock II](leetcode/122.md)
 
@@ -302,13 +308,14 @@
 
 ### Others
 [69. Sqrt(x) II](leetcode/69.md)
-## Binary Index Tree
+
+## Binary Index Tree (树状数组)
 
 [307. Range Sum Query - Mutable](leetcode/307.md)
 
 [315. Count of Smaller Numbers After Self](leetcode/315.md)
 
-## Segment Tree
+## Segment Tree 
 
 [218. The Skyline Problem](leetcode/218.md)
 
@@ -318,7 +325,7 @@
 
 ## Union Find
 
-[547. Friend Circles](leetcode/547.md)
+[547. Friend Circles](leetcode/547.md)          
 
 ## DFS
 [79. Word Search](leetcode/79.md)
@@ -335,7 +342,7 @@
 
 [473. Matchsticks to Square](leetcode/473.md)
 
-[547. Friend Circles](leetcode/547.md)
+[547. Friend Circles](leetcode/547.md)    
 
 ## BFS
 
@@ -392,11 +399,17 @@
 
 [42. Trapping Rain Water](leetcode/42.md)
 
-[134. Gas Station](leetcode/134.md)
+[134. Gas Station](leetcode/134.md) 
+
+
 
 ### Others
 
 [84. Largest Rectangle in sogram](leetcode/84.md)
+
+## 滑动窗口
+
+[2799.Count Complete Subarrays in an Array](leetcode/2799.md)
 
 ## State Transition
 
@@ -415,6 +428,22 @@
 [376. Wiggle Subsequence](leetcode/376.md)
 
 [402. Remove K Digits](leetcode/402.md)
+
+## Prefix Sum
+
+[1031. Maximum Sum of Two Non-Overlapping Subarrays](leetcode/1031.md)
+
+[560. Subarray Sum Equals K](leetcode/560.md)
+
+## MinMax Stack
+
+[670. Maximum Swap](leetcode/670.md)
+
+## 差分数组
+
+[1094. 拼车](leetcode/1094.md) 
+
+[2772. 使数组中的所有元素都等于零](leetcode/2772.md) 
 
 ## Others
 
