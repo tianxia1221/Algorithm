@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参数操作对照表</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            padding: 30px;
+            color: #e0e0e0;
+        }
+
+        .cyber-table {
+            border-collapse: collapse;
+            width: 85%;
+            margin: 2rem auto;
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 144, 255, 0.15);
+            position: relative;
+        }
+
+        .cyber-table thead th {
+            background: linear-gradient(145deg, #1E90FF 30%, #0066CC 100%);
+            color: white;
+            padding: 16px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .cyber-table tbody td {
+            border: 1px solid rgba(51, 51, 51, 0.6);
+            padding: 14px;
+            color: #f0f0f0;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cyber-table tbody tr:nth-child(even) {
+            background: rgba(37, 37, 37, 0.6);
+        }
+
+        .cyber-table tbody tr:hover td {
+            background: rgba(51, 51, 51, 0.8);
+            transform: translateX(10px);
+        }
+
+        .cyber-code {
+            color: #4FC3F7;
+            font-family: 'Fira Code', monospace;
+            font-weight: 500;
+            text-shadow: 0 0 8px rgba(79, 195, 247, 0.2);
+        }
+
+        .cyber-codee {
+            color: #d7481d;
+            font-family: 'Fira Code', monospace;
+            font-weight: 500;
+            text-shadow: 0 0 8px rgba(79, 195, 247, 0.2);
+        }
+
+        .aa {
+            color: #1dd720;
+            font-family: 'Fira Code', monospace;
+            font-weight: 500;
+            text-shadow: 0 0 8px rgba(79, 195, 247, 0.2);
+        }
+        td:first-child {
+            width: 35%;
+            text-align: left;
+            padding-right: 30px;
+        }
+        /*!* 状态指示器 *!*/
+        /*.status-indicator {*/
+        /*    display: inline-block;*/
+        /*    width: 52px;*/
+        /*    height: 12px;*/
+        /*    border-radius: 70%;*/
+        /*    margin-left: 38px;*/
+        /*    box-shadow: 0 0 8px currentColor;*/
+        /*}*/
+
+        /*.legal-indicator {*/
+        /*    background: #69F0AE;*/
+        /*    animation: pulse 1.5s infinite;*/
+        /*}
+        td:last-child {
+            text-align: left;
+        }
+
+        /*!* 状态指示器 *!*/
+        /*.status-indicator {*/
+        /*    display: inline-block;*/
+        /*    width: 52px;*/
+        /*    height: 12px;*/
+        /*    border-radius: 70%;*/
+        /*    margin-left: 38px;*/
+        /*    box-shadow: 0 0 8px currentColor;*/
+        /*}*/
+
+        /*.legal-indicator {*/
+        /*    background: #69F0AE;*/
+        /*    animation: pulse 1.5s infinite;*/
+        /*}*/
+
+        @keyframes pulse {
+            0% { opacity: 0.8; }
+            50% { opacity: 0.4; }
+            100% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+    <table class="cyber-table">
+        <thead>
+            <tr>
+               <th>最小值</th>
+                <th>最大值</th>
+                <th>备注</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="cyber-code">lower<span class="status-indicator legal-indicator"></span></td>
+                <td class="cyber-code">lower + d</td>
+                <td class="cyber-code"></td>
+            </tr>
+            <tr>
+                <td class="cyber-code">x<span class="status-indicator legal-indicator"></span></td>
+                <td class="cyber-code">upper</td>
+                <td class="cyber-code">最大值区间 [lower + d, upper] 合法</td>
+            </tr>
+            <tr>
+                <td class="cyber-codee">upper<span class="status-indicator legal-indicator"></span></td>
+                <td class="cyber-code1">upper + d</td>
+                <td class="aa"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
