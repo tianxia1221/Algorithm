@@ -10,8 +10,6 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            /*font-family: Arial, sans-serif;*/
-            /*font-family: 'Segoe UI', system-ui, sans-serif;*/
             font-family: 'Fira Code', monospace;
 
             color: white;
@@ -21,11 +19,22 @@
             max-width: 100%;
             padding: 20px;
         }
-        table {
+        .table {
             border-collapse: collapse;
-            color: #fff;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            width: 85%;
+            margin: 2rem auto;
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 144, 255, 0.15);
+            position: relative;
         }
+        /*table {*/
+        /*    border-collapse: collapse;*/
+        /*    color: #fff;*/
+        /*    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);*/
+
+        /*}*/
         th, td {
             border: 1px solid #444;
             padding: 12px 15px;
@@ -33,16 +42,17 @@
             position: relative;
         }
         th {
-            background-color: #222;
+            background-color: #68656b;
             font-weight: bold;
             position: sticky;
             top: 0;
         }
         .header-row th {
-            background-color: #333;
+            /*background-color: #a92424;*/
+             background: linear-gradient(145deg, #1E90FF 30%, #0066CC 100%);
         }
         .blue-bg {
-            background-color: #1E88E5;
+            background-color: rgb(34, 140, 164);
         }
         .black-bg {
             background-color: #111;
@@ -53,6 +63,8 @@
         .light-yellow-bg {
             background-color: rgba(218, 211, 143, 0.89);
             color: #000;
+            text-shadow: 0 0 8px rgba(79, 195, 247, 0.2);
+
         }
         .light-green-bg {
             background-color: #84af9a;
@@ -62,9 +74,9 @@
 </head>
 <body>
     <div class="table-container">
-        <table>
+        <table class="table">
             <tr class="header-row">
-                <th>r 结尾 / 数组索引</th>
+                <th>r 结尾 \ 数组索引</th>
                 <th>0</th>
                 <th>1</th>
                 <th>2</th>
