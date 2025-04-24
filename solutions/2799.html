@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            /*font-family: Arial, sans-serif;*/
+            /*font-family: 'Segoe UI', system-ui, sans-serif;*/
+            font-family: 'Fira Code', monospace;
+
+            color: white;
+        }
+        .table-container {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 12px 15px;
+            text-align: center;
+            position: relative;
+        }
+        th {
+            background-color: #222;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        .header-row th {
+            background-color: #333;
+        }
+        .blue-bg {
+            background-color: #1E88E5;
+        }
+        .black-bg {
+            background-color: #111;
+        }
+        .highlight-column {
+            background-color: #4CAF50 !important;
+        }
+        .light-yellow-bg {
+            background-color: rgba(218, 211, 143, 0.89);
+            color: #000;
+        }
+        .light-green-bg {
+            background-color: #84af9a;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <tr class="header-row">
+                <th>r 结尾 / 数组索引</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>l</th>
+                <th>以 r 结尾的合法长度</th>
+            </tr>
+            <tr>
+                <th>0</th>
+                <td class="black-bg">1</td>
+                <td class="black-bg">1</td>
+                <td class="black-bg">2</td>
+                <td class="black-bg">3</td>
+                <td class="black-bg">1</td>
+                <td class="black-bg">2</td>
+                <td class="black-bg">0</td>
+                <td class="black-bg">0</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td class="black-bg">1</td>
+                <td class="black-bg">1</td>
+                <td class="black-bg">2</td>
+                <td class="black-bg">3</td>
+                <td class="black-bg">1</td>
+                <td class="black-bg">2</td>
+                <td class="black-bg">0</td>
+                <td class="black-bg">0</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="black-bg">1</td>
+                <td class="black-bg">1</td>
+                <td class="black-bg">2</td>
+                <td class="black-bg">3</td>
+                <td class="black-bg">1</td>
+                <td class="black-bg">2</td>
+                <td class="black-bg">0</td>
+                <td class="black-bg">0</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td class="black-bg">1</td>
+                <td class="black-bg">1</td>
+                <td class="blue-bg">2</td>
+                <td class="blue-bg">3</td>
+                <td class="blue-bg">1</td>
+                <td class="blue-bg">2</td>
+                <td class="blue-bg">2</td>
+                <td class="blue-bg">2</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td class="black-bg">1</td>
+                <td class="black-bg">1</td>
+                <td class="blue-bg">2</td>
+                <td class="blue-bg">3</td>
+                <td class="blue-bg">1</td>
+                <td class="blue-bg">2</td>
+                <td class="blue-bg">3</td>
+                <td class="blue-bg">3</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td class="black-bg">1</td>
+                <td class="black-bg">1</td>
+                <td class="blue-bg">2</td>
+                <td class="blue-bg">3</td>
+                <td class="blue-bg">1</td>
+                <td class="blue-bg">2</td>
+                <td class="blue-bg">4</td>
+                <td class="blue-bg">4</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const rows = document.querySelectorAll('table tr:not(.header-row)');
+            
+            rows.forEach(row => {
+                const cells = row.querySelectorAll('td');
+                const a = parseInt(cells[6].textContent); // 8th column (l)
+                const b = parseInt(row.querySelector('th').textContent); // first column (row number)
+                
+                // Calculate start and end columns (adding 1 because CSS is 1-based)
+                const startCol = a ;
+                const endCol = b ;
+                
+                // Reset all cells to black first
+                cells.forEach(cell => {
+                    cell.classList.remove('blue-bg');
+                    cell.classList.add('black-bg');
+                });
+                
+                // Apply blue background to the specified range
+                for (let i = startCol; i <= endCol && i < cells.length; i++) {
+                    cells[i].classList.remove('black-bg');
+                    cells[i].classList.add('blue-bg');
+                }
+                // Highlight second last column (l) with light yellow
+                cells[6].classList.remove('black-bg');
+                cells[6].classList.add('light-yellow-bg');
+
+                // Highlight last column with light green
+                cells[7].classList.remove('black-bg');
+                cells[7].classList.add('light-green-bg');
+            });
+        });
+    </script>
+</body>
+</html>
