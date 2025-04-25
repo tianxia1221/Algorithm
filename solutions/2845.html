@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Fira Code', monospace;
+            color: white;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 2rem auto;
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 144, 255, 0.15);
+            position: relative;
+            table-layout: fixed;
+        }
+
+        .table tbody td {
+            border: 1px solid rgba(51, 51, 51, 0.6);
+            padding: 14px;
+            /*color: #f0f0f0;*/
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .table tbody tr:nth-child(even) {
+            background: rgba(37, 37, 37, 0.6);
+        }
+
+        .table tbody tr:hover td {
+            background: rgba(51, 51, 51, 0.8);
+            transform: translateX(10px);
+        }
+
+        th,
+        td {
+            border: 1px solid #444;
+            padding: 12px 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        th {
+            background-color: #68656b;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+
+        .header-row th {
+            background: linear-gradient(145deg, #1E90FF 30%, #0066CC 100%);
+        }
+
+        .true-value {
+            color: #1dd720;
+            font-weight: bold;
+        }
+
+        .false-value {
+            color: #949419;
+            font-weight: bold;
+        }
+
+        /* First column width - widened by 100% */
+        .table td:first-child {
+            width: 20%; /* Significantly wider first column */
+            min-width: 90px;
+        }
+
+        /* Other columns */
+        .table th:not(:first-child),
+        .table td:not(:first-child) {
+            width: 15%; /* Reduced width for other columns */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table class="table">
+            <tr class="header-row">
+                <th>说明 \ 索引</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>nums</th>
+                <td>5</td>
+                <td>1</td>
+                <td>11</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>v % modulo</th>
+                <td class="true-value">True</td>
+                <td class="false-value">False</td>
+                <td class="true-value">True</td>
+                <td class="true-value">True</td>
+            </tr>
+            <tr>
+                <th>s</th>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th>s % modulo</th>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th>s - k</th>
+                <td>1 - 2 = -1</td>
+                <td>1 - 2 = -1</td>
+                <td>2 - 2 = 0</td>
+                <td>0 - 2 = -2</td>
+            </tr>
+            <tr>
+                <th>s - k 负取正</th>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+             <tr>
+                <th>cnt</th>
+                <td>{0:1}</td>
+                <td>{0:1, 1:1}</td>
+                <td>{0:1, 1:2}</td>
+                <td>{0:1, 1:2, 2:1}</td>
+            </tr>
+            <tr>
+                <th>合法个数</th>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
