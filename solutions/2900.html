@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Fira Code', monospace;
+            color: white;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 85%;
+            margin: 2rem auto;
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 144, 255, 0.15);
+            position: relative;
+        }
+
+        .table tbody td {
+            border: 1px solid rgba(51, 51, 51, 0.6);
+            padding: 14px;
+            color: #f0f0f0;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .table tbody tr:nth-child(even) {
+            background: rgba(37, 37, 37, 0.6);
+        }
+
+        .table tbody tr:hover td {
+            background: rgba(51, 51, 51, 0.8);
+            transform: translateX(10px);
+        }
+
+        th,
+        td {
+            border: 1px solid #444;
+            padding: 12px 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        th {
+            background-color: #68656b;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+
+        .header-row th {
+            background: linear-gradient(145deg, #1E90FF 30%, #0066CC 100%);
+        }
+
+        .bg-0 {
+            background-color: #5f9b77;
+        }
+
+        .bg-1 {
+            background-color: rgba(146, 95, 194, 0.89);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table class="table">
+            <tr class="header-row">
+                <th>groups索引</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+            </tr>
+            <tr>
+                <th>值</th>
+                <td class="bg-1">1</td>
+                <td class="bg-1">1</td>
+                <td class="bg-0">0</td>
+                <td class="bg-0">0</td>
+                <td class="bg-0">0</td>
+                <td class="bg-1">1</td>
+                <td class="bg-1">1</td>
+                <td class="bg-0">0</td>
+                <td class="bg-0">0</td>
+                <td class="bg-1">1</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
