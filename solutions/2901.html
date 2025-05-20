@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Fira Code', monospace;
+            color: white;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 2rem auto;
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 144, 255, 0.15);
+            position: relative;
+        }
+
+        .table tbody td {
+            border: 1px solid rgba(51, 51, 51, 0.6);
+            padding: 14px;
+            color: #f0f0f0;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .table tbody tr:nth-child(even) {
+            background: rgba(37, 37, 37, 0.6);
+        }
+
+        .table tbody tr:hover td {
+            background: rgba(51, 51, 51, 0.8);
+            transform: translateX(10px);
+        }
+
+        th,
+        td {
+            border: 1px solid #444;
+            padding: 12px 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        th {
+            background-color: #68656b;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        .redBk {
+            color: rgb(215, 72, 29);
+            background-color: rgb(67, 152, 171);
+        }
+
+        .header-row th {
+            background: linear-gradient(145deg, #1E90FF 30%, #0066CC 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table class="table">
+            <tr class="header-row">
+                <th>index</th>
+                <th>words</th>
+                <th>groups</th>
+                <th>f[i][0] 长度</th>
+                <th>f[i][1] 前索引</th>
+            </tr>
+            <tr>
+                <td style="color: #a0f74f">0</td>
+                <td >bab</td>
+                <td>1</td>
+                <td>1</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>dab</td>
+                <td>2</td>
+                <td>2</td>
+                <td style="color: #a0f74f">0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>cab</td>
+                <td>2</td>
+                <td>2</td>
+                <td style="color: #a0f74f">0</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
